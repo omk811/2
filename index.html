@@ -2,769 +2,295 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>جدول المراجعة المتكاملة — الصف الخامس</title>
 <style>
-:root{
-  --math-b:#085041;--math-l:#E1F5EE;--math-m:#1D9E75;
-  --islam-b:#26215C;--islam-l:#EEEDFE;--islam-m:#534AB7;
-  --eng-b:#042C53;--eng-l:#E6F1FB;--eng-m:#185FA5;
-  --arab-b:#4A1B0C;--arab-l:#FAECE7;--arab-m:#D85A30;
-  --sci-b:#173404;--sci-l:#EAF3DE;--sci-m:#3B6D11;
-  --soc-b:#412402;--soc-l:#FAEEDA;--soc-m:#BA7517;
-  --exam-b:#791F1F;--exam-l:#FCEBEB;--exam-m:#E24B4A;
-  --eid-b:#26215C;--eid-l:#F3F0FF;--eid-m:#7F77DD;
-  --fri-b:#085041;--fri-l:#E1F5EE;--fri-m:#1D9E75;
-  --dark:#2C2C2A;--muted:#888780;--light:#F1EFE8;
-  --done-bg:#E8F8F0;--done-border:#1D9E75;
-}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'FreeSerif','FreeSans','DejaVu Sans',sans-serif;background:#f4f3ef;color:#2C2C2A;direction:rtl}
-.page-header{background:var(--dark);color:var(--light);padding:1.1rem 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.3)}
-.page-header h1{font-size:17px;font-weight:800}
-.page-header p{font-size:11px;color:#B4B2A9;margin-top:2px}
-.header-right{text-align:left;font-size:11px;color:#9FE1CB;line-height:2}
-.progress-bar-wrap{background:white;padding:.7rem 1.8rem;border-bottom:1px solid #e0dfd8;position:sticky;top:63px;z-index:99;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.progress-track{flex:1;height:9px;background:#e0dfd8;border-radius:9px;overflow:hidden;min-width:150px}
-.progress-fill{height:100%;background:linear-gradient(90deg,var(--math-m),var(--arab-m));border-radius:9px;transition:width .4s ease}
-.progress-text{font-size:12px;font-weight:700;color:var(--dark);white-space:nowrap}
-.reset-btn{font-size:11px;padding:3px 11px;border:1px solid #ccc;border-radius:18px;background:white;cursor:pointer;color:var(--muted)}
-.reset-btn:hover{border-color:var(--exam-m);color:var(--exam-m)}
-.legend-strip{background:white;padding:.5rem 1.8rem;border-bottom:1px solid #e0dfd8;display:flex;flex-wrap:wrap;gap:5px;align-items:center}
-.leg{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:11px;border:1px solid}
-.leg-done{background:var(--done-bg);color:#085041;border-color:var(--done-border)}
-.note-strip{background:#FAECE7;padding:.5rem 1.8rem;border-bottom:1px solid #F5C4B3;font-size:11px;color:var(--arab-b);line-height:1.9;border-right:4px solid var(--arab-m)}
+.hdr{background:#2C2C2A;color:#F1EFE8;padding:1rem 1.8rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.hdr h1{font-size:17px;font-weight:800}
+.hdr p{font-size:11px;color:#B4B2A9;margin-top:2px}
+.hdr-r{text-align:left;font-size:11px;color:#9FE1CB;line-height:2}
+.pb{background:white;padding:.65rem 1.8rem;border-bottom:1px solid #e0dfd8;position:sticky;top:62px;z-index:99;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.pt{flex:1;height:9px;background:#e0dfd8;border-radius:9px;overflow:hidden;min-width:140px}
+.pf{height:100%;background:linear-gradient(90deg,#1D9E75,#D85A30);border-radius:9px;transition:width .4s}
+.ptx{font-size:12px;font-weight:700;color:#2C2C2A;white-space:nowrap}
+.rbtn{font-size:11px;padding:3px 11px;border:1px solid #ccc;border-radius:18px;background:white;cursor:pointer;color:#888}
+.rbtn:hover{border-color:#E24B4A;color:#E24B4A}
+.lgd{background:white;padding:.5rem 1.8rem;border-bottom:1px solid #e0dfd8;display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.lg{display:inline-flex;align-items:center;font-size:10px;font-weight:700;padding:2px 8px;border-radius:11px;border:1px solid}
+.ns{background:#FAECE7;padding:.5rem 1.8rem;border-bottom:1px solid #F5C4B3;font-size:11px;color:#4A1B0C;line-height:1.9;border-right:4px solid #D85A30}
 .main{padding:1rem 1.8rem;max-width:1130px;margin:0 auto}
-.footer-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:7px;margin-bottom:.9rem}
-.fstat{background:white;border:1px solid #dedad2;border-radius:7px;padding:7px;text-align:center}
-.fstat strong{display:block;font-size:17px;font-weight:800}
-.fstat span{font-size:9px;color:var(--muted)}
-.week-hdr{display:flex;align-items:center;gap:9px;margin:1.1rem 0 .5rem;padding:.6rem 1rem;background:var(--dark);color:var(--light);border-radius:8px}
-.week-hdr .wn{background:var(--arab-m);color:white;border-radius:5px;padding:1px 8px;font-size:11px;font-weight:700}
-.week-hdr .wt{font-size:13px;font-weight:700}
-.week-hdr .wd{font-size:10px;color:#B4B2A9;margin-right:auto}
-.eid-hdr{display:flex;align-items:center;gap:9px;margin:1.1rem 0 .5rem;padding:.6rem 1rem;background:var(--eid-m);color:white;border-radius:8px}
-.eid-hdr .wn{background:white;color:var(--eid-m);border-radius:5px;padding:1px 8px;font-size:11px;font-weight:700}
-.eid-hdr .wt{font-size:13px;font-weight:700}
-.eid-hdr .wd{font-size:10px;color:rgba(255,255,255,.8);margin-right:auto}
-.exam-hdr{display:flex;align-items:center;gap:9px;margin:1.1rem 0 .5rem;padding:.6rem 1rem;background:var(--exam-m);color:white;border-radius:8px}
-.exam-hdr .wn{background:white;color:var(--exam-m);border-radius:5px;padding:1px 8px;font-size:11px;font-weight:700}
-.exam-hdr .wt{font-size:13px;font-weight:700}
-.exam-hdr .wd{font-size:10px;color:rgba(255,255,255,.85);margin-right:auto}
-.tbl-wrap{overflow-x:auto;border-radius:8px;border:1px solid #dedad2;background:white;margin-bottom:5px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:7px;margin-bottom:.9rem}
+.fs{background:white;border:1px solid #dedad2;border-radius:7px;padding:7px;text-align:center}
+.fs strong{display:block;font-size:17px;font-weight:800}
+.fs span{font-size:9px;color:#888780}
+.whdr{display:flex;align-items:center;gap:9px;margin:1.1rem 0 .5rem;padding:.6rem 1rem;border-radius:8px}
+.wn{border-radius:5px;padding:1px 9px;font-size:11px;font-weight:700}
+.wt{font-size:13px;font-weight:700}
+.wd{font-size:10px;margin-right:auto}
+.tw{overflow-x:auto;border-radius:8px;border:1px solid #dedad2;background:white;margin-bottom:5px}
 table{width:100%;border-collapse:collapse;font-size:11px;min-width:720px}
-thead th{background:var(--dark);color:var(--light);padding:7px 5px;text-align:center;font-size:10.5px;font-weight:700;border:1px solid rgba(255,255,255,.12)}
-th.c1{width:55px}th.c2{width:44px}th.c3{width:17%}th.c4{width:24%}th.c5{width:24%}th.c6{width:10%}th.c7{width:10%}
+thead th{background:#2C2C2A;color:#F1EFE8;padding:7px 5px;text-align:center;font-size:10.5px;font-weight:700;border:1px solid rgba(255,255,255,.12)}
+th.c1{width:56px}th.c2{width:44px}th.c3{width:17%}th.c4{width:24%}th.c5{width:24%}th.c6{width:10%}th.c7{width:10%}
 td{padding:4px 5px;border:.5px solid #e5e3db;vertical-align:top}
-.day-td{font-weight:800;font-size:12px;text-align:center;background:#f7f6f2;color:var(--dark)}
-.date-td{text-align:center;color:var(--muted);font-size:10px;background:#f7f6f2}
-.sleep-td{background:#EFF9F4;font-size:9.5px;color:#085041;text-align:center;vertical-align:middle;font-weight:700;line-height:1.6;border-right:3px solid var(--math-m)}
-tr.row-done td{opacity:.58}
-tr.row-done .day-td,tr.row-done .date-td{background:#E8F8F0}
-.slot{border-radius:5px;padding:4px 6px;margin:2px 0;line-height:1.45;border-right:3px solid;position:relative;cursor:pointer;transition:transform .1s,box-shadow .1s}
-.slot:hover{transform:translateY(-1px);box-shadow:0 2px 7px rgba(0,0,0,.13)}
-.slot.done{opacity:.48;text-decoration:line-through}
-.slot.done::after{content:'✓';position:absolute;left:5px;top:50%;transform:translateY(-50%);font-size:13px;font-weight:900;color:var(--math-m)}
-.slot-title{font-weight:700;font-size:11px;display:block}
-.slot-sub{font-size:9.5px;color:inherit;opacity:.8;display:block;margin-top:1px;font-style:italic}
-.school-slot{background:var(--light);border-color:#888780;color:#444441;cursor:default}
-.school-slot:hover{transform:none;box-shadow:none}
-.fri-slot{background:var(--fri-l);border-color:var(--fri-m);color:var(--fri-b)}
-.eid-slot{background:var(--eid-l);border-color:var(--eid-m);color:var(--eid-b)}
-.off-td{background:#f7f6f2;color:#aaa;text-align:center;font-size:10px;font-style:italic;vertical-align:middle}
-.eid-td{background:var(--eid-l);color:var(--eid-b);text-align:center;font-size:10px;font-weight:700;vertical-align:middle;border-right:3px solid var(--eid-m)}
-.exam-note{font-size:9.5px;color:var(--exam-m);text-align:center;vertical-align:middle}
-.exam-badge{display:inline-block;background:var(--exam-l);color:var(--exam-b);font-size:8.5px;font-weight:700;padding:1px 5px;border-radius:6px;border:1px solid var(--exam-m);margin-bottom:2px;white-space:nowrap}
-.exam-day-row td{border-top:2px solid var(--exam-m)}
-.exam-label{display:block;font-size:10px;font-weight:700;color:var(--exam-b);background:var(--exam-l);border:1px solid var(--exam-m);border-radius:5px;padding:4px 5px;text-align:center;line-height:1.6}
-.arabic-box{margin-top:.7rem;background:#EEEDFE;border-radius:8px;border:1px solid #CECBF6;padding:.8rem 1.1rem;font-size:10.5px;color:var(--islam-b);line-height:2}
-.arabic-box strong{color:var(--dark);font-size:11.5px;display:block;margin-bottom:3px}
-.footer-note{background:white;border-radius:8px;border:1px solid #dedad2;padding:.8rem 1.2rem;margin-top:.7rem;font-size:10.5px;color:#555;line-height:2}
-.footer-note strong{color:var(--dark);font-size:11.5px;display:block;margin-bottom:3px}
-@media print{
-  .page-header{position:relative;top:auto}
-  .progress-bar-wrap,.legend-strip,.reset-btn{display:none}
-  .slot{cursor:default}
-  body{background:white}
-}
+.dtd{font-weight:800;font-size:12px;text-align:center;background:#f7f6f2}
+.atd{text-align:center;color:#888780;font-size:10px;background:#f7f6f2}
+.slp{background:#EFF9F4;font-size:9.5px;color:#085041;text-align:center;vertical-align:middle;font-weight:700;line-height:1.6;border-right:3px solid #1D9E75}
+tr.done td{opacity:.58}
+tr.done .dtd,tr.done .atd{background:#E8F8F0}
+.sl{border-radius:5px;padding:4px 6px;margin:2px 0;line-height:1.45;border-right:3px solid;position:relative;cursor:pointer;transition:transform .1s,box-shadow .1s}
+.sl:hover{transform:translateY(-1px);box-shadow:0 2px 7px rgba(0,0,0,.13)}
+.sl.done{opacity:.48;text-decoration:line-through}
+.sl.done::after{content:'✓';position:absolute;left:5px;top:50%;transform:translateY(-50%);font-size:13px;font-weight:900;color:#1D9E75}
+.st{font-weight:700;font-size:11px;display:block}
+.ss{font-size:9.5px;opacity:.82;display:block;margin-top:1px;font-style:italic}
+.distbar{background:white;border:1px solid #dedad2;border-radius:8px;padding:.9rem 1.2rem;margin-bottom:.9rem}
+.distbar h3{font-size:12px;font-weight:700;color:#2C2C2A;margin-bottom:.6rem;border-bottom:1px solid #e5e3db;padding-bottom:4px}
+.bars{display:flex;flex-direction:column;gap:5px}
+.bar-row{display:flex;align-items:center;gap:8px}
+.bar-lbl{font-size:10px;width:110px;text-align:right;flex-shrink:0;color:#444}
+.bar-track{flex:1;height:14px;background:#f0efeb;border-radius:7px;overflow:hidden}
+.bar-fill{height:100%;border-radius:7px;transition:width .6s}
+.bar-val{font-size:10px;width:60px;color:#666}
+.arbox{margin-top:.7rem;background:#EEEDFE;border-radius:8px;border:1px solid #CECBF6;padding:.75rem 1.1rem;font-size:10.5px;color:#26215C;line-height:2}
+.arbox strong{color:#2C2C2A;font-size:11.5px;display:block;margin-bottom:3px}
+.fn{background:white;border-radius:8px;border:1px solid #dedad2;padding:.8rem 1.2rem;margin-top:.7rem;font-size:10.5px;color:#555;line-height:2}
+.fn strong{color:#2C2C2A;font-size:11.5px;display:block;margin-bottom:3px}
+.credit{text-align:center;margin-top:.7rem;padding:.7rem;font-size:9.5px;color:#aaa}
+@media print{.hdr{position:relative;top:auto}.pb,.lgd,.rbtn{display:none}.sl{cursor:default}body{background:white}}
 </style>
 </head>
 <body>
 
-<div class="page-header">
+<div class="hdr">
   <div>
     <h1>جدول المراجعة المتكاملة — الصف الخامس</h1>
-    <p>الفصل الدراسي الثاني | ٣ مايو – ٨ يونيو ٢٠٢٦ | يشمل إجازة عيد الأضحى وأيام الامتحانات</p>
+    <p>الفصل الدراسي الثاني | ٣ مايو – ٨ يونيو ٢٠٢٦ | توزيع متوازن حسب أهمية كل مادة</p>
   </div>
-  <div class="header-right">
-    الدوام: ٧:١٥ – ١٢:٥٠ (توقيت صيفي)<br>
-    جلسة ١: ٢:٣٠–٤:٠٠ | جلسة ٢: ٤:٣٠–٦:٠٠ | نوم: ١٠:٠٠ م
-  </div>
+  <div class="hdr-r">الدوام: ٧:١٥ – ١٢:٥٠ (توقيت صيفي)<br>جلسة ١: ٢:٣٠–٤:٠٠ | جلسة ٢: ٤:٣٠–٦:٠٠ | نوم: ١٠:٠٠ م</div>
 </div>
 
-<div class="progress-bar-wrap">
-  <span class="progress-text" id="progressText">جارٍ التحميل...</span>
-  <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
-  <button class="reset-btn" onclick="resetAll()">اعادة تعيين</button>
+<div class="pb">
+  <span class="ptx" id="ptx">جارٍ التحميل...</span>
+  <div class="pt"><div class="pf" id="pf" style="width:0%"></div></div>
+  <button class="rbtn" onclick="resetAll()">اعادة تعيين</button>
 </div>
 
-<div class="legend-strip">
-  <span class="leg" style="background:var(--math-l);color:var(--math-b);border-color:var(--math-m)">الرياضيات</span>
-  <span class="leg" style="background:var(--islam-l);color:var(--islam-b);border-color:var(--islam-m)">التربية الإسلامية</span>
-  <span class="leg" style="background:var(--eng-l);color:var(--eng-b);border-color:var(--eng-m)">الإنجليزية</span>
-  <span class="leg" style="background:var(--arab-l);color:var(--arab-b);border-color:var(--arab-m)">اللغة العربية</span>
-  <span class="leg" style="background:var(--sci-l);color:var(--sci-b);border-color:var(--sci-m)">العلوم</span>
-  <span class="leg" style="background:var(--soc-l);color:var(--soc-b);border-color:var(--soc-m)">الاجتماعيات</span>
-  <span class="leg" style="background:var(--fri-l);color:var(--fri-b);border-color:var(--fri-m)">جمعة</span>
-  <span class="leg" style="background:var(--eid-l);color:var(--eid-b);border-color:var(--eid-m)">عيد الأضحى</span>
-  <span class="leg leg-done">منجز</span>
-  <span style="font-size:10px;color:var(--muted);margin-right:auto">اضغط على أي جلسة لتحديدها كمنجزة</span>
+<div class="lgd">
+  <span class="lg" style="background:#E1F5EE;color:#085041;border-color:#1D9E75">الرياضيات ١٦</span>
+  <span class="lg" style="background:#EEEDFE;color:#26215C;border-color:#534AB7">التربية الإسلامية ١٣</span>
+  <span class="lg" style="background:#FAEEDA;color:#412402;border-color:#BA7517">الاجتماعيات ١١</span>
+  <span class="lg" style="background:#EAF3DE;color:#173404;border-color:#3B6D11">العلوم ١٠</span>
+  <span class="lg" style="background:#FAECE7;color:#4A1B0C;border-color:#D85A30">اللغة العربية ٩</span>
+  <span class="lg" style="background:#E6F1FB;color:#042C53;border-color:#185FA5">الإنجليزية ٨</span>
+  <span class="lg" style="background:#E8F8F0;color:#085041;border-color:#1D9E75">✓ منجز</span>
+  <span style="font-size:10px;color:#888;margin-right:auto">اضغط على أي جلسة لتحديدها</span>
 </div>
 
-<div class="note-strip">
-  الدوام ينتهي ١٢:٥٠ | استراحة + غداء + قيلولة ٢٠د: ١٢:٥٠–٢:٣٠ |
-  <strong>جلسة ١: ٢:٣٠–٤:٠٠</strong> | استراحة + العصر: ٣٠د |
+<div class="ns">
+  الدوام ينتهي ١٢:٥٠ | استراحة + غداء: ١٢:٥٠–٢:٣٠ |
+  <strong>جلسة ١: ٢:٣٠–٤:٠٠</strong> | استراحة + العصر |
   <strong>جلسة ٢: ٤:٣٠–٦:٠٠</strong> | المغرب + عشاء + واجبات |
   <strong>نوم: ١٠:٠٠ م — إلزامي</strong>
 </div>
 
 <div class="main">
-<div class="footer-stats">
-  <div class="fstat"><strong style="color:var(--arab-m)" id="statDays">0</strong><span>جلسة منجزة</span></div>
-  <div class="fstat"><strong style="color:var(--math-m)">4</strong><span>أسابيع مراجعة</span></div>
-  <div class="fstat"><strong style="color:var(--eid-m)">7</strong><span>أيام عيد الأضحى</span></div>
-  <div class="fstat"><strong style="color:var(--exam-m)">6</strong><span>امتحانات يونيو</span></div>
+
+<div class="stats">
+  <div class="fs"><strong style="color:#1D9E75">١٦</strong><span>جلسة رياضيات</span></div>
+  <div class="fs"><strong style="color:#534AB7">١٣</strong><span>جلسة إسلامية</span></div>
+  <div class="fs"><strong style="color:#BA7517">١١</strong><span>جلسة اجتماعيات</span></div>
+  <div class="fs"><strong style="color:#3B6D11">١٠</strong><span>جلسة علوم</span></div>
+  <div class="fs"><strong style="color:#D85A30">٩</strong><span>جلسة عربية</span></div>
+  <div class="fs"><strong style="color:#185FA5">٨</strong><span>جلسة إنجليزية</span></div>
+  <div class="fs"><strong style="color:#E24B4A" id="sdone">0</strong><span>منجز</span></div>
 </div>
 
-<!-- ═══════════ WEEK 1 ═══════════ -->
-<div class="week-hdr">
-  <span class="wn">الأسبوع الأول</span><span class="wt">التثبيت والفهم</span>
-  <span class="wd">٣ – ٩ مايو ٢٠٢٦</span>
+<div class="distbar">
+  <h3>توزيع جلسات المراجعة حسب المادة</h3>
+  <div class="bars">
+    <div class="bar-row"><span class="bar-lbl">الرياضيات</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:#1D9E75"></div></div><span class="bar-val">١٦ جلسة (~٢٤ ساعة)</span></div>
+    <div class="bar-row"><span class="bar-lbl">التربية الإسلامية</span><div class="bar-track"><div class="bar-fill" style="width:81%;background:#534AB7"></div></div><span class="bar-val">١٣ جلسة (~١٩.٥ ساعة)</span></div>
+    <div class="bar-row"><span class="bar-lbl">الاجتماعيات</span><div class="bar-track"><div class="bar-fill" style="width:69%;background:#BA7517"></div></div><span class="bar-val">١١ جلسة (~١٦.٥ ساعة)</span></div>
+    <div class="bar-row"><span class="bar-lbl">العلوم</span><div class="bar-track"><div class="bar-fill" style="width:63%;background:#3B6D11"></div></div><span class="bar-val">١٠ جلسة (~١٥ ساعة)</span></div>
+    <div class="bar-row"><span class="bar-lbl">اللغة العربية</span><div class="bar-track"><div class="bar-fill" style="width:56%;background:#D85A30"></div></div><span class="bar-val">٩ جلسة (~١٣.٥ ساعة)</span></div>
+    <div class="bar-row"><span class="bar-lbl">اللغة الإنجليزية</span><div class="bar-track"><div class="bar-fill" style="width:50%;background:#185FA5"></div></div><span class="bar-val">٨ جلسة (~١٢ ساعة)</span></div>
+  </div>
 </div>
-<div class="tbl-wrap"><table>
+
+<div class="whdr" style="background:#2C2C2A">
+  <span class="wn" style="color:#D85A30">الأسبوع الأول</span>
+  <span class="wt" style="color:#F1EFE8">التثبيت والفهم</span>
+  <span class="wd" style="color:#B4B2A9">٣ – ٩ مايو ٢٠٢٦</span>
+</div>
+<div class="tw"><table>
 <thead><tr>
   <th class="c1">اليوم</th><th class="c2">التاريخ</th>
   <th class="c3">المدرسة ٧:١٥–١٢:٥٠</th>
   <th class="c4">جلسة ١ | ٢:٣٠–٤:٠٠</th>
   <th class="c5">جلسة ٢ | ٤:٣٠–٦:٠٠</th>
   <th class="c6">النوم</th><th class="c7">ملاحظة</th>
-</tr></thead>
-<tbody>
-<tr id="row-d1">
-  <td class="day-td">الأحد</td><td class="date-td">٣/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d1-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d1-1','d1')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">إنَّ وأخواتها — المعاني الست</span>
-  </div></td>
-  <td><div class="slot" id="s-d1-2" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d1-2','d1')">
-    <span class="slot-title">الرياضيات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d2">
-  <td class="day-td">الإثنين</td><td class="date-td">٤/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d2-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d2-1','d2')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">إنَّ وأخواتها — اسمها وخبرها</span>
-  </div></td>
-  <td><div class="slot" id="s-d2-2" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-d2-2','d2')">
-    <span class="slot-title">التربية الإسلامية</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d3">
-  <td class="day-td">الثلاثاء</td><td class="date-td">٥/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d3-1" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d3-1','d3')">
-    <span class="slot-title">الرياضيات</span>
-  </div></td>
-  <td><div class="slot" id="s-d3-2" style="background:var(--eng-l);border-color:var(--eng-m);color:var(--eng-b)" onclick="toggle('s-d3-2','d3')">
-    <span class="slot-title">اللغة الإنجليزية</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d4">
-  <td class="day-td">الأربعاء</td><td class="date-td">٦/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d4-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d4-1','d4')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">كان وأخواتها — اسمها (صريح/مستتر)</span>
-  </div></td>
-  <td><div class="slot" id="s-d4-2" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-d4-2','d4')">
-    <span class="slot-title">العلوم</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d5">
-  <td class="day-td">الخميس</td><td class="date-td">٧/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d5-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d5-1','d5')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">الإملاء: الألف في آخر الأفعال</span>
-  </div></td>
-  <td><div class="slot" id="s-d5-2" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-d5-2','d5')">
-    <span class="slot-title">الاجتماعيات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-f1">
-  <td class="day-td" style="color:var(--fri-b)">الجمعة</td><td class="date-td">٨/٥</td>
-  <td><div class="slot fri-slot"><span class="slot-title">لا دوام</span><span class="slot-sub">يوم عائلي</span></div></td>
-  <td><div class="slot fri-slot" id="s-f1-1" onclick="toggle('s-f1-1','f1')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">الأدب: نصائح طبيب (أحمد الفارسي)</span>
-  </div></td>
-  <td><div class="slot fri-slot" id="s-f1-2" onclick="toggle('s-f1-2','f1')">
-    <span class="slot-title">الرياضيات</span>
-    <span class="slot-sub">مراجعة خفيفة</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--fri-b)">مراجعة خفيفة</td>
-</tr>
-<tr id="row-d6">
-  <td class="day-td">السبت</td><td class="date-td">٩/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d6-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d6-1','d6')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">الأدب: الغراب والثعلب (لافونتين)</span>
-  </div></td>
-  <td><div class="slot" id="s-d6-2" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d6-2','d6')">
-    <span class="slot-title">الرياضيات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
+</tr></thead><tbody><tr id="row-r0"><td class="dtd" style="color:#2C2C2A">الأحد</td><td class="atd">٣/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r0-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r0-1','r0')"><span class="st">الرياضيات</span></div></td><td><div class="sl" id="s-r0-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r0-2','r0')"><span class="st">التربية الإسلامية</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r1"><td class="dtd" style="color:#2C2C2A">الإثنين</td><td class="atd">٤/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r1-1" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r1-1','r1')"><span class="st">اللغة العربية</span><span class="ss">إنَّ وأخواتها — المعاني الست</span></div></td><td><div class="sl" id="s-r1-2" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r1-2','r1')"><span class="st">الرياضيات</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r2"><td class="dtd" style="color:#2C2C2A">الثلاثاء</td><td class="atd">٥/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r2-1" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r2-1','r2')"><span class="st">التربية الإسلامية</span></div></td><td><div class="sl" id="s-r2-2" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r2-2','r2')"><span class="st">العلوم</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r3"><td class="dtd" style="color:#2C2C2A">الأربعاء</td><td class="atd">٦/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r3-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r3-1','r3')"><span class="st">الرياضيات</span></div></td><td><div class="sl" id="s-r3-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r3-2','r3')"><span class="st">الاجتماعيات</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r4"><td class="dtd" style="color:#2C2C2A">الخميس</td><td class="atd">٧/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r4-1" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r4-1','r4')"><span class="st">اللغة العربية</span><span class="ss">كان وأخواتها — اسمها صريح أو مستتر</span></div></td><td><div class="sl" id="s-r4-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r4-2','r4')"><span class="st">التربية الإسلامية</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r5"><td class="dtd" style="color:#1D9E75">الجمعة</td><td class="atd">٨/٥</td><td style="background:#E1F5EE;color:#085041;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #1D9E75"><span style="font-weight:700">لا دوام</span></td><td><div class="sl" id="s-r5-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r5-1','r5')"><span class="st">الرياضيات</span><span class="ss">مراجعة خفيفة</span></div></td><td><div class="sl" id="s-r5-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r5-2','r5')"><span class="st">الاجتماعيات</span><span class="ss">مراجعة خفيفة</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">جمعة</td></tr>
+<tr id="row-r6"><td class="dtd" style="color:#2C2C2A">السبت</td><td class="atd">٩/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r6-1" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r6-1','r6')"><span class="st">العلوم</span></div></td><td><div class="sl" id="s-r6-2" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r6-2','r6')"><span class="st">اللغة العربية</span><span class="ss">الإملاء: الألف في آخر الأفعال</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
 </tbody></table></div>
-
-<!-- ═══════════ WEEK 2 ═══════════ -->
-<div class="week-hdr">
-  <span class="wn">الأسبوع الثاني</span><span class="wt">التعمق والتطبيق</span>
-  <span class="wd">١٠ – ١٦ مايو ٢٠٢٦</span>
+<div class="whdr" style="background:#2C2C2A">
+  <span class="wn" style="color:#D85A30">الأسبوع الثاني</span>
+  <span class="wt" style="color:#F1EFE8">التعمق والتطبيق</span>
+  <span class="wd" style="color:#B4B2A9">١٠ – ١٦ مايو ٢٠٢٦</span>
 </div>
-<div class="tbl-wrap"><table>
+<div class="tw"><table>
 <thead><tr>
   <th class="c1">اليوم</th><th class="c2">التاريخ</th>
   <th class="c3">المدرسة ٧:١٥–١٢:٥٠</th>
   <th class="c4">جلسة ١ | ٢:٣٠–٤:٠٠</th>
   <th class="c5">جلسة ٢ | ٤:٣٠–٦:٠٠</th>
   <th class="c6">النوم</th><th class="c7">ملاحظة</th>
-</tr></thead>
-<tbody>
-<tr id="row-d7">
-  <td class="day-td">الأحد</td><td class="date-td">١٠/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d7-1" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-d7-1','d7')">
-    <span class="slot-title">التربية الإسلامية</span>
-  </div></td>
-  <td><div class="slot" id="s-d7-2" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d7-2','d7')">
-    <span class="slot-title">اللغة العربية</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d8">
-  <td class="day-td">الإثنين</td><td class="date-td">١١/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d8-1" style="background:var(--eng-l);border-color:var(--eng-m);color:var(--eng-b)" onclick="toggle('s-d8-1','d8')">
-    <span class="slot-title">اللغة الإنجليزية</span>
-  </div></td>
-  <td><div class="slot" id="s-d8-2" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d8-2','d8')">
-    <span class="slot-title">الرياضيات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d9">
-  <td class="day-td">الثلاثاء</td><td class="date-td">١٢/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d9-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d9-1','d9')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">الإملاء: علامة التنصيص والفاصلة المنقوطة</span>
-  </div></td>
-  <td><div class="slot" id="s-d9-2" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-d9-2','d9')">
-    <span class="slot-title">العلوم</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d10">
-  <td class="day-td">الأربعاء</td><td class="date-td">١٣/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d10-1" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-d10-1','d10')">
-    <span class="slot-title">الاجتماعيات</span>
-  </div></td>
-  <td><div class="slot" id="s-d10-2" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d10-2','d10')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">كان وأخواتها — تطبيق وحل تمارين</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d11">
-  <td class="day-td">الخميس</td><td class="date-td">١٤/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d11-1" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-d11-1','d11')">
-    <span class="slot-title">التربية الإسلامية</span>
-  </div></td>
-  <td><div class="slot" id="s-d11-2" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d11-2','d11')">
-    <span class="slot-title">الرياضيات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-f2">
-  <td class="day-td" style="color:var(--fri-b)">الجمعة</td><td class="date-td">١٥/٥</td>
-  <td><div class="slot fri-slot"><span class="slot-title">لا دوام</span><span class="slot-sub">يوم عائلي</span></div></td>
-  <td><div class="slot fri-slot" id="s-f2-1" onclick="toggle('s-f2-1','f2')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">إنَّ وأخواتها — تمارين وتطبيق</span>
-  </div></td>
-  <td><div class="slot fri-slot" id="s-f2-2" onclick="toggle('s-f2-2','f2')">
-    <span class="slot-title">العلوم + الاجتماعيات</span>
-    <span class="slot-sub">خرائط ذهنية للوحدات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--fri-b)">مراجعة خفيفة</td>
-</tr>
-<tr id="row-d12">
-  <td class="day-td">السبت</td><td class="date-td">١٦/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d12-1" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-d12-1','d12')">
-    <span class="slot-title">العلوم</span>
-  </div></td>
-  <td><div class="slot" id="s-d12-2" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-d12-2','d12')">
-    <span class="slot-title">الاجتماعيات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
+</tr></thead><tbody><tr id="row-r7"><td class="dtd" style="color:#2C2C2A">الأحد</td><td class="atd">١٠/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r7-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r7-1','r7')"><span class="st">الرياضيات</span></div></td><td><div class="sl" id="s-r7-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r7-2','r7')"><span class="st">التربية الإسلامية</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r8"><td class="dtd" style="color:#2C2C2A">الإثنين</td><td class="atd">١١/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r8-1" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r8-1','r8')"><span class="st">الاجتماعيات</span></div></td><td><div class="sl" id="s-r8-2" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r8-2','r8')"><span class="st">الرياضيات</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r9"><td class="dtd" style="color:#2C2C2A">الثلاثاء</td><td class="atd">١٢/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r9-1" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r9-1','r9')"><span class="st">التربية الإسلامية</span></div></td><td><div class="sl" id="s-r9-2" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r9-2','r9')"><span class="st">العلوم</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r10"><td class="dtd" style="color:#2C2C2A">الأربعاء</td><td class="atd">١٣/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r10-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r10-1','r10')"><span class="st">الرياضيات</span></div></td><td><div class="sl" id="s-r10-2" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r10-2','r10')"><span class="st">اللغة العربية</span><span class="ss">الإملاء: علامة التنصيص والفاصلة المنقوطة</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r11"><td class="dtd" style="color:#2C2C2A">الخميس</td><td class="atd">١٤/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r11-1" style="background:#E6F1FB;border-color:#185FA5;color:#042C53" onclick="tog('s-r11-1','r11')"><span class="st">اللغة الإنجليزية</span></div></td><td><div class="sl" id="s-r11-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r11-2','r11')"><span class="st">التربية الإسلامية</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r12"><td class="dtd" style="color:#1D9E75">الجمعة</td><td class="atd">١٥/٥</td><td style="background:#E1F5EE;color:#085041;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #1D9E75"><span style="font-weight:700">لا دوام</span></td><td><div class="sl" id="s-r12-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r12-1','r12')"><span class="st">الرياضيات</span><span class="ss">مراجعة خفيفة</span></div></td><td><div class="sl" id="s-r12-2" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r12-2','r12')"><span class="st">العلوم</span><span class="ss">مراجعة خفيفة</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">جمعة</td></tr>
+<tr id="row-r13"><td class="dtd" style="color:#2C2C2A">السبت</td><td class="atd">١٦/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r13-1" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r13-1','r13')"><span class="st">الاجتماعيات</span></div></td><td><div class="sl" id="s-r13-2" style="background:#E6F1FB;border-color:#185FA5;color:#042C53" onclick="tog('s-r13-2','r13')"><span class="st">اللغة الإنجليزية</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
 </tbody></table></div>
-
-<!-- ═══════════ WEEK 3 ═══════════ -->
-<div class="week-hdr">
-  <span class="wn">الأسبوع الثالث</span><span class="wt">النماذج والتثبيت</span>
-  <span class="wd">١٧ – ٢٣ مايو ٢٠٢٦</span>
+<div class="whdr" style="background:#2C2C2A">
+  <span class="wn" style="color:#D85A30">الأسبوع الثالث</span>
+  <span class="wt" style="color:#F1EFE8">النماذج والتثبيت</span>
+  <span class="wd" style="color:#B4B2A9">١٧ – ٢٣ مايو ٢٠٢٦</span>
 </div>
-<div class="tbl-wrap"><table>
+<div class="tw"><table>
 <thead><tr>
   <th class="c1">اليوم</th><th class="c2">التاريخ</th>
   <th class="c3">المدرسة ٧:١٥–١٢:٥٠</th>
   <th class="c4">جلسة ١ | ٢:٣٠–٤:٠٠</th>
   <th class="c5">جلسة ٢ | ٤:٣٠–٦:٠٠</th>
   <th class="c6">النوم</th><th class="c7">ملاحظة</th>
-</tr></thead>
-<tbody>
-<tr id="row-d13">
-  <td class="day-td">الأحد</td><td class="date-td">١٧/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d13-1" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d13-1','d13')">
-    <span class="slot-title">الرياضيات</span>
-    <span class="slot-sub">نموذج امتحاني كامل</span>
-  </div></td>
-  <td><div class="slot" id="s-d13-2" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d13-2','d13')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">إنَّ وكان وأخواتها — نموذج تدريبي</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--exam-m)">أسبوع النماذج</td>
-</tr>
-<tr id="row-d14">
-  <td class="day-td">الإثنين</td><td class="date-td">١٨/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d14-1" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-d14-1','d14')">
-    <span class="slot-title">التربية الإسلامية</span>
-    <span class="slot-sub">نموذج امتحاني كامل</span>
-  </div></td>
-  <td><div class="slot" id="s-d14-2" style="background:var(--eng-l);border-color:var(--eng-m);color:var(--eng-b)" onclick="toggle('s-d14-2','d14')">
-    <span class="slot-title">اللغة الإنجليزية</span>
-    <span class="slot-sub">نموذج كامل</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d15">
-  <td class="day-td">الثلاثاء</td><td class="date-td">١٩/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d15-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d15-1','d15')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">نموذج امتحاني كامل (٤٠ درجة)</span>
-  </div></td>
-  <td><div class="slot" id="s-d15-2" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-d15-2','d15')">
-    <span class="slot-title">العلوم</span>
-    <span class="slot-sub">نموذج امتحاني</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d16">
-  <td class="day-td">الأربعاء</td><td class="date-td">٢٠/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d16-1" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-d16-1','d16')">
-    <span class="slot-title">الاجتماعيات</span>
-    <span class="slot-sub">نموذج امتحاني + خرائط</span>
-  </div></td>
-  <td><div class="slot" id="s-d16-2" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d16-2','d16')">
-    <span class="slot-title">الرياضيات</span>
-    <span class="slot-sub">تصحيح وتحليل الأخطاء</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-d17">
-  <td class="day-td">الخميس</td><td class="date-td">٢١/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d17-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d17-1','d17')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">الإملاء: مراجعة القواعد الثلاث + تمارين</span>
-  </div></td>
-  <td><div class="slot" id="s-d17-2" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-d17-2','d17')">
-    <span class="slot-title">التربية الإسلامية</span>
-    <span class="slot-sub">بطاقات الآيات والأحاديث</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-f3">
-  <td class="day-td" style="color:var(--fri-b)">الجمعة</td><td class="date-td">٢٢/٥</td>
-  <td><div class="slot fri-slot"><span class="slot-title">لا دوام</span><span class="slot-sub">يوم عائلي</span></div></td>
-  <td><div class="slot fri-slot" id="s-f3-1" onclick="toggle('s-f3-1','f3')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">الأدب: نصائح طبيب + الغراب والثعلب — مراجعة</span>
-  </div></td>
-  <td><div class="slot fri-slot" id="s-f3-2" onclick="toggle('s-f3-2','f3')">
-    <span class="slot-title">التربية الإسلامية</span>
-    <span class="slot-sub">مراجعة السيرة والفقه</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--fri-b)">مراجعة خفيفة</td>
-</tr>
-<tr id="row-d18">
-  <td class="day-td">السبت</td><td class="date-td">٢٣/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d18-1" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-d18-1','d18')">
-    <span class="slot-title">العلوم</span>
-    <span class="slot-sub">مراجعة شاملة</span>
-  </div></td>
-  <td><div class="slot" id="s-d18-2" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-d18-2','d18')">
-    <span class="slot-title">الاجتماعيات</span>
-    <span class="slot-sub">مراجعة شاملة</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
+</tr></thead><tbody><tr id="row-r14"><td class="dtd" style="color:#2C2C2A">الأحد</td><td class="atd">١٧/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r14-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r14-1','r14')"><span class="st">الرياضيات</span><span class="ss">نموذج امتحاني كامل</span></div></td><td><div class="sl" id="s-r14-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r14-2','r14')"><span class="st">التربية الإسلامية</span><span class="ss">نموذج امتحاني</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">أسبوع النماذج</td></tr>
+<tr id="row-r15"><td class="dtd" style="color:#2C2C2A">الإثنين</td><td class="atd">١٨/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r15-1" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r15-1','r15')"><span class="st">العلوم</span><span class="ss">نموذج امتحاني</span></div></td><td><div class="sl" id="s-r15-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r15-2','r15')"><span class="st">الاجتماعيات</span><span class="ss">نموذج امتحاني</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r16"><td class="dtd" style="color:#2C2C2A">الثلاثاء</td><td class="atd">١٩/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r16-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r16-1','r16')"><span class="st">الرياضيات</span><span class="ss">تصحيح وتحليل الأخطاء</span></div></td><td><div class="sl" id="s-r16-2" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r16-2','r16')"><span class="st">اللغة العربية</span><span class="ss">نموذج امتحاني كامل (٤٠ درجة)</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r17"><td class="dtd" style="color:#2C2C2A">الأربعاء</td><td class="atd">٢٠/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r17-1" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r17-1','r17')"><span class="st">التربية الإسلامية</span><span class="ss">تصحيح وتحليل الأخطاء</span></div></td><td><div class="sl" id="s-r17-2" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r17-2','r17')"><span class="st">الرياضيات</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r18"><td class="dtd" style="color:#2C2C2A">الخميس</td><td class="atd">٢١/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r18-1" style="background:#E6F1FB;border-color:#185FA5;color:#042C53" onclick="tog('s-r18-1','r18')"><span class="st">اللغة الإنجليزية</span><span class="ss">نموذج امتحاني</span></div></td><td><div class="sl" id="s-r18-2" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r18-2','r18')"><span class="st">اللغة العربية</span><span class="ss">الأدب: نصائح طبيب + الغراب والثعلب</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r19"><td class="dtd" style="color:#1D9E75">الجمعة</td><td class="atd">٢٢/٥</td><td style="background:#E1F5EE;color:#085041;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #1D9E75"><span style="font-weight:700">لا دوام</span></td><td><div class="sl" id="s-r19-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r19-1','r19')"><span class="st">الرياضيات</span><span class="ss">مراجعة خفيفة</span></div></td><td><div class="sl" id="s-r19-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r19-2','r19')"><span class="st">التربية الإسلامية</span><span class="ss">مراجعة خفيفة</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">جمعة</td></tr>
+<tr id="row-r20"><td class="dtd" style="color:#2C2C2A">السبت</td><td class="atd">٢٣/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r20-1" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r20-1','r20')"><span class="st">العلوم</span><span class="ss">مراجعة شاملة</span></div></td><td><div class="sl" id="s-r20-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r20-2','r20')"><span class="st">الاجتماعيات</span><span class="ss">مراجعة شاملة</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
 </tbody></table></div>
-
-<!-- ═══════════ WEEK 4 : قبل العيد ═══════════ -->
-<div class="week-hdr">
-  <span class="wn">الأسبوع الرابع</span><span class="wt">الاستعداد النهائي — قبل العيد</span>
-  <span class="wd">٢٤ – ٢٥ مايو ٢٠٢٦</span>
+<div class="whdr" style="background:#2C2C2A">
+  <span class="wn" style="color:#D85A30">الأسبوع الرابع</span>
+  <span class="wt" style="color:#F1EFE8">الاستعداد النهائي — قبل العيد</span>
+  <span class="wd" style="color:#B4B2A9">٢٤ – ٢٥ مايو ٢٠٢٦</span>
 </div>
-<div class="tbl-wrap"><table>
+<div class="tw"><table>
 <thead><tr>
   <th class="c1">اليوم</th><th class="c2">التاريخ</th>
   <th class="c3">المدرسة ٧:١٥–١٢:٥٠</th>
   <th class="c4">جلسة ١ | ٢:٣٠–٤:٠٠</th>
   <th class="c5">جلسة ٢ | ٤:٣٠–٦:٠٠</th>
   <th class="c6">النوم</th><th class="c7">ملاحظة</th>
-</tr></thead>
-<tbody>
-<tr id="row-d19">
-  <td class="day-td">الأحد</td><td class="date-td">٢٤/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d19-1" style="background:var(--math-l);border-color:var(--math-m);color:var(--math-b)" onclick="toggle('s-d19-1','d19')">
-    <span class="slot-title">الرياضيات</span>
-    <span class="slot-sub">مراجعة شاملة نهائية</span>
-  </div></td>
-  <td><div class="slot" id="s-d19-2" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-d19-2','d19')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">إنَّ وكان وأخواتها — مراجعة سريعة</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--eid-m)">غداً بداية العيد</td>
-</tr>
-<tr id="row-d20">
-  <td class="day-td">الإثنين</td><td class="date-td">٢٥/٥</td>
-  <td><div class="slot school-slot"><span class="slot-title">دوام مدرسي</span></div></td>
-  <td><div class="slot" id="s-d20-1" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-d20-1','d20')">
-    <span class="slot-title">التربية الإسلامية</span>
-    <span class="slot-sub">مراجعة خفيفة نهائية</span>
-  </div></td>
-  <td><div class="slot" id="s-d20-2" style="background:var(--eng-l);border-color:var(--eng-m);color:var(--eng-b)" onclick="toggle('s-d20-2','d20')">
-    <span class="slot-title">اللغة الإنجليزية</span>
-    <span class="slot-sub">Quick Review</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--eid-m)">آخر يوم قبل العيد</td>
-</tr>
+</tr></thead><tbody><tr id="row-r21"><td class="dtd" style="color:#2C2C2A">الأحد</td><td class="atd">٢٤/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r21-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r21-1','r21')"><span class="st">الرياضيات</span><span class="ss">مراجعة شاملة نهائية</span></div></td><td><div class="sl" id="s-r21-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r21-2','r21')"><span class="st">التربية الإسلامية</span><span class="ss">مراجعة شاملة نهائية</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">غداً عرفة</td></tr>
+<tr id="row-r22"><td class="dtd" style="color:#2C2C2A">الإثنين</td><td class="atd">٢٥/٥</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;vertical-align:middle;padding:4px 6px;border-right:3px solid #888780"><span style="font-weight:700">دوام مدرسي</span></td><td><div class="sl" id="s-r22-1" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r22-1','r22')"><span class="st">اللغة العربية</span><span class="ss">إنَّ وكان وأخواتها — مراجعة نهائية</span></div></td><td><div class="sl" id="s-r22-2" style="background:#E6F1FB;border-color:#185FA5;color:#042C53" onclick="tog('s-r22-2','r22')"><span class="st">اللغة الإنجليزية</span><span class="ss">مراجعة نهائية</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">آخر يوم قبل العيد</td></tr>
 </tbody></table></div>
-
-<!-- ═══════════ EID HOLIDAY ═══════════ -->
-<div class="eid-hdr">
-  <span class="wn">إجازة عيد الأضحى</span>
-  <span class="wt">استراتيجية المراجعة خلال العيد</span>
-  <span class="wd">٢٦ مايو – ١ يونيو ٢٠٢٦</span>
+<div class="whdr" style="background:#7F77DD">
+  <span class="wn" style="color:white">إجازة عيد الأضحى</span>
+  <span class="wt" style="color:white">استراتيجية المراجعة خلال العيد</span>
+  <span class="wd" style="color:rgba(255,255,255,.75)">٢٦ مايو – ١ يونيو ٢٠٢٦</span>
 </div>
-<div class="tbl-wrap"><table>
+<div class="tw"><table>
 <thead><tr>
   <th class="c1">اليوم</th><th class="c2">التاريخ</th>
   <th class="c3">طبيعة اليوم</th>
   <th class="c4">جلسة ١ | ١٠:٠٠–١١:٣٠</th>
   <th class="c5">جلسة ٢ | ٨:٠٠–٩:٠٠ م</th>
   <th class="c6">النوم</th><th class="c7">ملاحظة</th>
-</tr></thead>
-<tbody>
-<tr>
-  <td class="day-td" style="color:var(--eid-b)">الثلاثاء</td><td class="date-td">٢٦/٥</td>
-  <td class="eid-td">يوم عرفة — إجازة رسمية</td>
-  <td class="eid-td" colspan="2">راحة تامة — يوم عرفة المبارك</td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--eid-b)">يوم عرفة</td>
-</tr>
-<tr>
-  <td class="day-td" style="color:var(--eid-b)">الأربعاء</td><td class="date-td">٢٧/٥</td>
-  <td class="eid-td">يوم عيد الأضحى الأول — راحة تامة</td>
-  <td class="eid-td" colspan="2">راحة تامة — العيد والعائلة</td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--eid-b)">عيد مبارك</td>
-</tr>
-<tr id="row-e1">
-  <td class="day-td" style="color:var(--eid-b)">الخميس</td><td class="date-td">٢٨/٥</td>
-  <td class="eid-td">يوم عيد الأضحى الثاني — مراجعة</td>
-  <td><div class="slot eid-slot" id="s-e1-1" onclick="toggle('s-e1-1','e1')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">إنَّ وأخواتها + كان وأخواتها</span>
-  </div></td>
-  <td><div class="slot eid-slot" id="s-e1-2" onclick="toggle('s-e1-2','e1')">
-    <span class="slot-title">الرياضيات</span>
-    <span class="slot-sub">الإملاء + الأدب (نصائح طبيب + الغراب والثعلب)</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--eid-b)">مراجعة فعلية</td>
-</tr>
-<tr id="row-ef1">
-  <td class="day-td" style="color:var(--fri-b)">الجمعة</td><td class="date-td">٢٩/٥</td>
-  <td class="eid-td">جمعة العيد — مراجعة</td>
-  <td><div class="slot eid-slot" id="s-ef1-1" onclick="toggle('s-ef1-1','ef1')">
-    <span class="slot-title">الرياضيات</span>
-    <span class="slot-sub">نموذج امتحاني كامل</span>
-  </div></td>
-  <td><div class="slot eid-slot" id="s-ef1-2" onclick="toggle('s-ef1-2','ef1')">
-    <span class="slot-title">التربية الإسلامية</span>
-    <span class="slot-sub">مراجعة الآيات والأحاديث والسيرة</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--fri-b)">جمعة مع مراجعة</td>
-</tr>
-<tr id="row-e2">
-  <td class="day-td" style="color:var(--eid-b)">السبت</td><td class="date-td">٣٠/٥</td>
-  <td class="eid-td">العيد — مراجعة</td>
-  <td><div class="slot eid-slot" id="s-e2-1" onclick="toggle('s-e2-1','e2')">
-    <span class="slot-title">اللغة الإنجليزية</span>
-    <span class="slot-sub">نموذج امتحاني كامل</span>
-  </div></td>
-  <td><div class="slot eid-slot" id="s-e2-2" onclick="toggle('s-e2-2','e2')">
-    <span class="slot-title">العلوم + الاجتماعيات</span>
-    <span class="slot-sub">مراجعة المصطلحات والمفاهيم</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-e3">
-  <td class="day-td" style="color:var(--eid-b)">الأحد</td><td class="date-td">٣١/٥</td>
-  <td class="eid-td">ليلة الامتحان — الرياضيات فقط</td>
-  <td><div class="slot eid-slot" id="s-e3-1" onclick="toggle('s-e3-1','e3')">
-    <span class="slot-title">الرياضيات</span>
-    <span class="slot-sub">مراجعة شاملة — كل الوحدات</span>
-  </div></td>
-  <td><div class="slot eid-slot" id="s-e3-2" onclick="toggle('s-e3-2','e3')">
-    <span class="slot-title">الرياضيات فقط</span>
-    <span class="slot-sub">تثبيت وحل أسئلة سريعة — لا مواد أخرى</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--exam-m)">غداً امتحان الرياضيات</td>
-</tr>
+</tr></thead><tbody><tr id="row-r23"><td class="dtd" style="color:#7F77DD">الثلاثاء</td><td class="atd">٢٦/٥</td><td colspan="4" style="background:#F3F0FF;color:#26215C;text-align:center;font-size:11px;font-weight:700;vertical-align:middle;padding:6px">يوم عرفة — إجازة رسمية</td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r24"><td class="dtd" style="color:#7F77DD">الأربعاء</td><td class="atd">٢٧/٥</td><td colspan="4" style="background:#F3F0FF;color:#26215C;text-align:center;font-size:11px;font-weight:700;vertical-align:middle;padding:6px">يوم عيد الأضحى الأول — راحة تامة</td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">عيد مبارك</td></tr>
+<tr id="row-r25"><td class="dtd" style="color:#7F77DD">الخميس</td><td class="atd">٢٨/٥</td><td style="background:#F3F0FF;color:#26215C;font-size:10.5px;font-weight:700;vertical-align:middle;padding:4px 6px;border-right:3px solid #7F77DD">العيد الثاني — مراجعة</td><td><div class="sl" id="s-r25-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r25-1','r25')"><span class="st">الرياضيات</span><span class="ss">إنَّ وأخواتها + كان وأخواتها</span></div></td><td><div class="sl" id="s-r25-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r25-2','r25')"><span class="st">الاجتماعيات</span><span class="ss">بطاقات ومصطلحات</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r26"><td class="dtd" style="color:#7F77DD">الجمعة</td><td class="atd">٢٩/٥</td><td style="background:#F3F0FF;color:#26215C;font-size:10.5px;font-weight:700;vertical-align:middle;padding:4px 6px;border-right:3px solid #7F77DD">جمعة العيد — مراجعة</td><td><div class="sl" id="s-r26-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r26-1','r26')"><span class="st">الرياضيات</span><span class="ss">نموذج امتحاني كامل</span></div></td><td><div class="sl" id="s-r26-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r26-2','r26')"><span class="st">التربية الإسلامية</span><span class="ss">مراجعة الآيات والأحاديث</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">جمعة</td></tr>
+<tr id="row-r27"><td class="dtd" style="color:#7F77DD">السبت</td><td class="atd">٣٠/٥</td><td style="background:#F3F0FF;color:#26215C;font-size:10.5px;font-weight:700;vertical-align:middle;padding:4px 6px;border-right:3px solid #7F77DD">العيد — مراجعة</td><td><div class="sl" id="s-r27-1" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r27-1','r27')"><span class="st">العلوم</span><span class="ss">مراجعة شاملة</span></div></td><td><div class="sl" id="s-r27-2" style="background:#E6F1FB;border-color:#185FA5;color:#042C53" onclick="tog('s-r27-2','r27')"><span class="st">اللغة الإنجليزية</span><span class="ss">Vocabulary + Grammar</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r28"><td class="dtd" style="color:#7F77DD">الأحد</td><td class="atd">٣١/٥</td><td style="background:#F3F0FF;color:#26215C;font-size:10.5px;font-weight:700;vertical-align:middle;padding:4px 6px;border-right:3px solid #7F77DD">ليلة امتحان الرياضيات</td><td><div class="sl" id="s-r28-1" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r28-1','r28')"><span class="st">الرياضيات</span><span class="ss">مراجعة شاملة — كل الوحدات</span></div></td><td><div class="sl" id="s-r28-2" style="background:#E1F5EE;border-color:#1D9E75;color:#085041" onclick="tog('s-r28-2','r28')"><span class="st">الرياضيات فقط</span><span class="ss">تثبيت نهائي — لا مواد أخرى</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#E24B4A;text-align:center;vertical-align:middle;background:#FCEBEB;padding:3px">امتحان غداً</td></tr>
 </tbody></table></div>
-
-<!-- ═══════════ EXAM WEEK ═══════════ -->
-<div class="exam-hdr">
-  <span class="wn">أسبوع الامتحانات</span>
-  <span class="wt">مراجعة خفيفة + أيام الامتحانات</span>
-  <span class="wd">١ – ٨ يونيو ٢٠٢٦</span>
+<div class="whdr" style="background:#E24B4A">
+  <span class="wn" style="color:white">أسبوع الامتحانات</span>
+  <span class="wt" style="color:white">مراجعة خفيفة + أيام الامتحانات</span>
+  <span class="wd" style="color:rgba(255,255,255,.75)">١ – ٨ يونيو ٢٠٢٦</span>
 </div>
-<div class="tbl-wrap"><table>
+<div class="tw"><table>
 <thead><tr>
   <th class="c1">اليوم</th><th class="c2">التاريخ</th>
-  <th class="c3">الامتحان اليوم</th>
-  <th class="c4">بعد الامتحان — استعداد التالي</th>
+  <th class="c3">طبيعة اليوم</th>
+  <th class="c4">جلسة ١ | ٢:٣٠–٤:٠٠</th>
   <th class="c5">ليلة الامتحان — مادة الغد فقط</th>
   <th class="c6">النوم</th><th class="c7">ملاحظة</th>
-</tr></thead>
-<tbody>
-<tr class="exam-day-row">
-  <td class="day-td" style="color:var(--exam-b)">الإثنين</td><td class="date-td">١/٦</td>
-  <td><span class="exam-label">امتحان الرياضيات<br>ساعة ونصف | ٨:٠٠–٩:٣٠</span></td>
-  <td><div class="slot" id="s-ex0-1" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-ex0-1','ex0')">
-    <span class="slot-title">التربية الإسلامية</span>
-    <span class="slot-sub">تركيز كامل — الإسلامية فقط</span>
-  </div></td>
-  <td><div class="slot" id="s-ex0-2" style="background:var(--islam-l);border-color:var(--islam-m);color:var(--islam-b)" onclick="toggle('s-ex0-2','ex0')">
-    <span class="slot-title">التربية الإسلامية</span>
-    <span class="slot-sub">تثبيت نهائي — الإسلامية فقط</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td class="exam-note"><span class="exam-badge">امتحان غداً</span><br>الإسلامية</td>
-</tr>
-<tr class="exam-day-row">
-  <td class="day-td" style="color:var(--exam-b)">الثلاثاء</td><td class="date-td">٢/٦</td>
-  <td><span class="exam-label">امتحان التربية الإسلامية<br>ساعتان | ٨:٠٠–١٠:٠٠</span></td>
-  <td><div class="slot" id="s-ex1-1" style="background:var(--eng-l);border-color:var(--eng-m);color:var(--eng-b)" onclick="toggle('s-ex1-1','ex1')">
-    <span class="slot-title">اللغة الإنجليزية</span>
-    <span class="slot-sub">تركيز كامل — الإنجليزية فقط</span>
-  </div></td>
-  <td><div class="slot" id="s-ex1-2" style="background:var(--eng-l);border-color:var(--eng-m);color:var(--eng-b)" onclick="toggle('s-ex1-2','ex1')">
-    <span class="slot-title">اللغة الإنجليزية</span>
-    <span class="slot-sub">تثبيت نهائي — الإنجليزية فقط</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td class="exam-note"><span class="exam-badge">امتحان غداً</span><br>الإنجليزية</td>
-</tr>
-<tr class="exam-day-row">
-  <td class="day-td" style="color:var(--exam-b)">الأربعاء</td><td class="date-td">٣/٦</td>
-  <td><span class="exam-label">امتحان اللغة الإنجليزية<br>ساعة ونصف | ٨:٠٠–٩:٣٠</span></td>
-  <td><div class="slot" id="s-ex2-1" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-ex2-1','ex2')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">إنَّ وأخواتها + كان وأخواتها — تركيز كامل</span>
-  </div></td>
-  <td><div class="slot" id="s-ex2-2" style="background:var(--arab-l);border-color:var(--arab-m);color:var(--arab-b)" onclick="toggle('s-ex2-2','ex2')">
-    <span class="slot-title">اللغة العربية</span>
-    <span class="slot-sub">الإملاء + الأدب — تثبيت نهائي، العربية فقط</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td class="exam-note"><span class="exam-badge">امتحان غداً</span><br>اللغة العربية</td>
-</tr>
-<tr class="exam-day-row">
-  <td class="day-td" style="color:var(--exam-b)">الخميس</td><td class="date-td">٤/٦</td>
-  <td><span class="exam-label">امتحان اللغة العربية<br>ساعتان | ٨:٠٠–١٠:٠٠</span></td>
-  <td><div class="slot" id="s-ex3-1" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-ex3-1','ex3')">
-    <span class="slot-title">العلوم</span>
-    <span class="slot-sub">مراجعة المصطلحات والمفاهيم</span>
-  </div></td>
-  <td><div class="slot" id="s-ex3-2" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-ex3-2','ex3')">
-    <span class="slot-title">الاجتماعيات</span>
-    <span class="slot-sub">مراجعة الخرائط والتواريخ</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td><td></td>
-</tr>
-<tr id="row-ef2">
-  <td class="day-td" style="color:var(--fri-b)">الجمعة</td><td class="date-td">٥/٦</td>
-  <td><div class="slot fri-slot"><span class="slot-title">لا امتحان</span><span class="slot-sub">جمعة إجازة</span></div></td>
-  <td><div class="slot fri-slot" id="s-ef2-1" onclick="toggle('s-ef2-1','ef2')">
-    <span class="slot-title">العلوم</span>
-    <span class="slot-sub">مراجعة خفيفة — الوحدات الأساسية</span>
-  </div></td>
-  <td><div class="slot fri-slot" id="s-ef2-2" onclick="toggle('s-ef2-2','ef2')">
-    <span class="slot-title">الاجتماعيات</span>
-    <span class="slot-sub">نموذج سريع + بطاقات</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td style="font-size:9px;color:var(--fri-b)">جمعة مع مراجعة</td>
-</tr>
-<tr id="row-ex5">
-  <td class="day-td">السبت</td><td class="date-td">٦/٦</td>
-  <td><div class="slot school-slot"><span class="slot-title">لا امتحان اليوم</span></div></td>
-  <td><div class="slot" id="s-ex5-1" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-ex5-1','ex5')">
-    <span class="slot-title">الاجتماعيات</span>
-    <span class="slot-sub">تركيز كامل — مراجعة شاملة</span>
-  </div></td>
-  <td><div class="slot" id="s-ex5-2" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-ex5-2','ex5')">
-    <span class="slot-title">العلوم</span>
-    <span class="slot-sub">تركيز كامل — مراجعة شاملة</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td class="exam-note"><span class="exam-badge">امتحان غداً</span><br>العلوم</td>
-</tr>
-<tr class="exam-day-row">
-  <td class="day-td" style="color:var(--exam-b)">الأحد</td><td class="date-td">٧/٦</td>
-  <td><span class="exam-label">امتحان العلوم<br>ساعة ونصف | ٨:٠٠–٩:٣٠</span></td>
-  <td><div class="slot" id="s-ex4-1" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-ex4-1','ex4')">
-    <span class="slot-title">الاجتماعيات</span>
-    <span class="slot-sub">تركيز كامل — الاجتماعيات فقط</span>
-  </div></td>
-  <td><div class="slot" id="s-ex4-2" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-ex4-2','ex4')">
-    <span class="slot-title">الاجتماعيات فقط</span>
-    <span class="slot-sub">تثبيت نهائي — خرائط وتواريخ ومفاهيم</span>
-  </div></td>
-  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
-  <td class="exam-note"><span class="exam-badge">امتحان غداً</span><br>الاجتماعيات</td>
-</tr>
-<tr class="exam-day-row">
-  <td class="day-td" style="color:var(--exam-b)">الإثنين</td><td class="date-td">٨/٦</td>
-  <td><span class="exam-label">امتحان الدراسات الاجتماعية<br>ساعة ونصف | ٨:٠٠–٩:٣٠</span></td>
-  <td colspan="3" style="background:#EAF3DE;text-align:center;vertical-align:middle;font-size:13px;font-weight:700;color:#173404">
-    انتهت الامتحانات! استحق راحتك بجدارة.
-  </td>
-  <td style="font-size:9px;color:var(--sci-m)">آخر امتحان</td>
-</tr>
+</tr></thead><tbody><tr id="row-r29"><td class="dtd" style="color:#E24B4A">الإثنين</td><td class="atd">١/٦</td><td style="background:#FCEBEB;border-right:3px solid #E24B4A;vertical-align:middle;padding:4px 6px"><span style="display:block;font-size:10px;font-weight:700;color:#791F1F">امتحان الرياضيات</span><span style="display:block;font-size:9px;color:#E24B4A">ساعة ونصف | ٨:٠٠–٩:٣٠</span></td><td><div class="sl" id="s-r29-1" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r29-1','r29')"><span class="st">التربية الإسلامية</span><span class="ss">تركيز كامل — الإسلامية فقط</span></div></td><td><div class="sl" id="s-r29-2" style="background:#EEEDFE;border-color:#534AB7;color:#26215C" onclick="tog('s-r29-2','r29')"><span class="st">التربية الإسلامية</span><span class="ss">تثبيت نهائي — الإسلامية فقط</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#E24B4A;text-align:center;vertical-align:middle;background:#FCEBEB;padding:3px">امتحان غداً: الإسلامية</td></tr>
+<tr id="row-r30"><td class="dtd" style="color:#E24B4A">الثلاثاء</td><td class="atd">٢/٦</td><td style="background:#FCEBEB;border-right:3px solid #E24B4A;vertical-align:middle;padding:4px 6px"><span style="display:block;font-size:10px;font-weight:700;color:#791F1F">امتحان التربية الإسلامية</span><span style="display:block;font-size:9px;color:#E24B4A">ساعتان | ٨:٠٠–١٠:٠٠</span></td><td><div class="sl" id="s-r30-1" style="background:#E6F1FB;border-color:#185FA5;color:#042C53" onclick="tog('s-r30-1','r30')"><span class="st">اللغة الإنجليزية</span><span class="ss">تركيز كامل — الإنجليزية فقط</span></div></td><td><div class="sl" id="s-r30-2" style="background:#E6F1FB;border-color:#185FA5;color:#042C53" onclick="tog('s-r30-2','r30')"><span class="st">اللغة الإنجليزية</span><span class="ss">تثبيت نهائي — الإنجليزية فقط</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#E24B4A;text-align:center;vertical-align:middle;background:#FCEBEB;padding:3px">امتحان غداً: الإنجليزية</td></tr>
+<tr id="row-r31"><td class="dtd" style="color:#E24B4A">الأربعاء</td><td class="atd">٣/٦</td><td style="background:#FCEBEB;border-right:3px solid #E24B4A;vertical-align:middle;padding:4px 6px"><span style="display:block;font-size:10px;font-weight:700;color:#791F1F">امتحان اللغة الإنجليزية</span><span style="display:block;font-size:9px;color:#E24B4A">ساعة ونصف | ٨:٠٠–٩:٣٠</span></td><td><div class="sl" id="s-r31-1" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r31-1','r31')"><span class="st">اللغة العربية</span><span class="ss">إنَّ وأخواتها + كان وأخواتها — تركيز كامل</span></div></td><td><div class="sl" id="s-r31-2" style="background:#FAECE7;border-color:#D85A30;color:#4A1B0C" onclick="tog('s-r31-2','r31')"><span class="st">اللغة العربية</span><span class="ss">الإملاء + الأدب — الإسلامية فقط</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#E24B4A;text-align:center;vertical-align:middle;background:#FCEBEB;padding:3px">امتحان غداً: العربية</td></tr>
+<tr id="row-r32"><td class="dtd" style="color:#E24B4A">الخميس</td><td class="atd">٤/٦</td><td style="background:#FCEBEB;border-right:3px solid #E24B4A;vertical-align:middle;padding:4px 6px"><span style="display:block;font-size:10px;font-weight:700;color:#791F1F">امتحان اللغة العربية</span><span style="display:block;font-size:9px;color:#E24B4A">ساعتان | ٨:٠٠–١٠:٠٠</span></td><td><div class="sl" id="s-r32-1" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r32-1','r32')"><span class="st">العلوم</span><span class="ss">مراجعة المصطلحات والمفاهيم</span></div></td><td><div class="sl" id="s-r32-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r32-2','r32')"><span class="st">الاجتماعيات</span><span class="ss">مراجعة الخرائط والتواريخ</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#888;text-align:center;vertical-align:middle;background:transparent;padding:3px"></td></tr>
+<tr id="row-r33"><td class="dtd" style="color:#1D9E75">الجمعة</td><td class="atd">٥/٦</td><td style="background:#E1F5EE;color:#085041;font-size:10.5px;font-weight:700;vertical-align:middle;padding:4px 6px;border-right:3px solid #1D9E75">لا امتحان — جمعة مع مراجعة</td><td><div class="sl" id="s-r33-1" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r33-1','r33')"><span class="st">العلوم</span><span class="ss">مراجعة خفيفة — الوحدات الأساسية</span></div></td><td><div class="sl" id="s-r33-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r33-2','r33')"><span class="st">الاجتماعيات</span><span class="ss">نموذج سريع + بطاقات</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#BA7517;text-align:center;vertical-align:middle;background:transparent;padding:3px">جمعة</td></tr>
+<tr id="row-r34"><td class="dtd" style="color:#2C2C2A">السبت</td><td class="atd">٦/٦</td><td style="background:#F1EFE8;color:#444441;font-size:10.5px;font-weight:700;vertical-align:middle;padding:4px 6px;border-right:3px solid #888">لا امتحان</td><td><div class="sl" id="s-r34-1" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r34-1','r34')"><span class="st">الاجتماعيات</span><span class="ss">تركيز كامل — مراجعة شاملة</span></div></td><td><div class="sl" id="s-r34-2" style="background:#EAF3DE;border-color:#3B6D11;color:#173404" onclick="tog('s-r34-2','r34')"><span class="st">العلوم</span><span class="ss">تركيز كامل — مراجعة شاملة</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#E24B4A;text-align:center;vertical-align:middle;background:#FCEBEB;padding:3px">امتحان غداً: العلوم</td></tr>
+<tr id="row-r35"><td class="dtd" style="color:#E24B4A">الأحد</td><td class="atd">٧/٦</td><td style="background:#FCEBEB;border-right:3px solid #E24B4A;vertical-align:middle;padding:4px 6px"><span style="display:block;font-size:10px;font-weight:700;color:#791F1F">امتحان العلوم</span><span style="display:block;font-size:9px;color:#E24B4A">ساعة ونصف | ٨:٠٠–٩:٣٠</span></td><td><div class="sl" id="s-r35-1" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r35-1','r35')"><span class="st">الاجتماعيات</span><span class="ss">تركيز كامل — الاجتماعيات فقط</span></div></td><td><div class="sl" id="s-r35-2" style="background:#FAEEDA;border-color:#BA7517;color:#412402" onclick="tog('s-r35-2','r35')"><span class="st">الاجتماعيات فقط</span><span class="ss">تثبيت نهائي — خرائط وتواريخ</span></div></td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#E24B4A;text-align:center;vertical-align:middle;background:#FCEBEB;padding:3px">امتحان غداً: الاجتماعيات</td></tr>
+<tr id="row-r36"><td class="dtd" style="color:#E24B4A">الإثنين</td><td class="atd">٨/٦</td><td colspan="4" style="background:#FCEBEB;color:#791F1F;text-align:center;font-size:11px;font-weight:700;vertical-align:middle;padding:6px">راحة</td><td class="slp">النوم<br>١٠:٠٠ م</td><td style="font-size:9px;color:#E24B4A;text-align:center;vertical-align:middle;background:#FCEBEB;padding:3px">آخر امتحان</td></tr>
 </tbody></table></div>
 
-<div class="arabic-box">
+
+<div class="arbox">
   <strong>دروس اللغة العربية الاختبارية — الصف الخامس (الفصل الثاني)</strong>
-  <strong>النحو والصرف:</strong>
-  إنَّ وأخواتها (المعاني الست: إنَّ، أنَّ، كأنَّ، لكنَّ، ليتَ، لعلَّ — اسمها وخبرها مفرداً أو جمع تكسير فقط) |
-  كان وأخواتها (اسمها: صريح أو ضمير مستتر — خبرها المفرد)
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <strong>الإملاء:</strong>
-  الألف في آخر الأفعال (ثلاثي: واو=ممدودة / ياء=مقصورة — غير ثلاثي: دائماً مقصورة إلا إذا سبقتها ياء) |
-  علامة التنصيص | الفاصلة المنقوطة (الجملة السببية)
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <strong>الأدب:</strong>
-  نصائح طبيب (أحمد الفارسي) | الغراب والثعلب (لافونتين)
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <span style="display:inline-block;background:var(--exam-l);color:var(--exam-b);border:1px solid var(--exam-m);border-radius:5px;padding:2px 8px;font-size:10px;font-weight:700;margin-top:4px">
-    دروس القراءة والتعبير الكتابي لا تدخل في الاختبار النهائي
-  </span>
+  <strong>النحو:</strong> إنَّ وأخواتها (المعاني الست — اسمها وخبرها مفرداً أو جمع تكسير) | كان وأخواتها (اسمها صريح أو ضمير مستتر) &nbsp;|&nbsp;
+  <strong>الإملاء:</strong> الألف في آخر الأفعال | علامة التنصيص | الفاصلة المنقوطة &nbsp;|&nbsp;
+  <strong>الأدب:</strong> نصائح طبيب (أحمد الفارسي) | الغراب والثعلب (لافونتين) &nbsp;|&nbsp;
+  <span style="background:#FCEBEB;color:#791F1F;padding:2px 8px;border-radius:5px;font-size:10px;font-weight:700">دروس القراءة والتعبير الكتابي لا تدخل في الاختبار النهائي</span>
 </div>
 
-<div class="footer-note">
+<div class="fn">
   <strong>خطة اليوم الدراسي — التوقيت الصيفي</strong>
-  ٧:١٥ انطلاق للمدرسة | ١٢:٥٠ انتهاء الدوام | ١٢:٥٠–٢:٣٠ غداء + صلاة + قيلولة ٢٠ دقيقة |
+  ٧:١٥ انطلاق | ١٢:٥٠ انتهاء الدوام | ١٢:٥٠–٢:٣٠ غداء + صلاة + قيلولة ٢٠ دقيقة |
   ٢:٣٠–٤:٠٠ جلسة مراجعة أولى | ٤:٠٠–٤:٣٠ استراحة + صلاة العصر |
   ٤:٣٠–٦:٠٠ جلسة مراجعة ثانية | ٦:٠٠ المغرب + عشاء + واجبات |
-  <strong>١٠:٠٠ م نوم — إلزامي كل ليلة بلا استثناء</strong>
+  <strong>١٠:٠٠ م نوم — إلزامي كل ليلة</strong>
 </div>
 
-<div style="text-align:center;margin-top:.7rem;padding:.7rem;font-size:9.5px;color:#aaa">
+<div class="credit">
   جدول مراجعة الصف الخامس | الفصل الدراسي الثاني ١٤٤٧/١٤٤٨هـ | إعداد: المعلم خليل البلوشي<br>
   مدرسة سعد بن معاذ للتعليم الأساسي | وزارة التربية والتعليم — سلطنة عُمان
 </div>
-
 </div>
 
 <script>
-const STORAGE_KEY='review_schedule_g5_2026_v3';
-function getState(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{};}catch(e){return{};}}
-function saveState(s){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(s));}catch(e){}}
-function toggle(slotId,rowId){const s=getState();s[slotId]=!s[slotId];saveState(s);applyState();}
-function applyState(){
-  const s=getState();let done=0,total=0;
-  document.querySelectorAll('.slot[id]').forEach(el=>{
-    total++;
-    if(s[el.id]){el.classList.add('done');done++;}
-    else{el.classList.remove('done');}
+const KEY='review_g5_v4';
+const SIDS=["s-r0-1", "s-r0-2", "s-r1-1", "s-r1-2", "s-r2-1", "s-r2-2", "s-r3-1", "s-r3-2", "s-r4-1", "s-r4-2", "s-r5-1", "s-r5-2", "s-r6-1", "s-r6-2", "s-r7-1", "s-r7-2", "s-r8-1", "s-r8-2", "s-r9-1", "s-r9-2", "s-r10-1", "s-r10-2", "s-r11-1", "s-r11-2", "s-r12-1", "s-r12-2", "s-r13-1", "s-r13-2", "s-r14-1", "s-r14-2", "s-r15-1", "s-r15-2", "s-r16-1", "s-r16-2", "s-r17-1", "s-r17-2", "s-r18-1", "s-r18-2", "s-r19-1", "s-r19-2", "s-r20-1", "s-r20-2", "s-r21-1", "s-r21-2", "s-r22-1", "s-r22-2", "s-r25-1", "s-r25-2", "s-r26-1", "s-r26-2", "s-r27-1", "s-r27-2", "s-r28-1", "s-r28-2", "s-r29-1", "s-r29-2", "s-r30-1", "s-r30-2", "s-r31-1", "s-r31-2", "s-r32-1", "s-r32-2", "s-r33-1", "s-r33-2", "s-r34-1", "s-r34-2", "s-r35-1", "s-r35-2"];
+const RIDS=["r0", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9", "r10", "r11", "r12", "r13", "r14", "r15", "r16", "r17", "r18", "r19", "r20", "r21", "r22", "r25", "r26", "r27", "r28", "r29", "r30", "r31", "r32", "r33", "r34", "r35"];
+
+function getS(){try{return JSON.parse(localStorage.getItem(KEY))||{};}catch(e){return{};}}
+function saveS(s){try{localStorage.setItem(KEY,JSON.stringify(s));}catch(e){}}
+function tog(sid,rid){const s=getS();s[sid]=!s[sid];saveS(s);apply();}
+function apply(){
+  const s=getS();let done=0,total=SIDS.length;
+  SIDS.forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el)return;
+    if(s[id]){el.classList.add('done');done++;}
+    else el.classList.remove('done');
   });
-  const rows=['d1','d2','d3','d4','d5','f1','d6',
-              'd7','d8','d9','d10','d11','f2','d12',
-              'd13','d14','d15','d16','d17','f3','d18',
-              'd19','d20','e1','ef1','e2','e3',
-              'ex0','ex1','ex2','ex3','ef2','ex4','ex5',];
-  rows.forEach(rId=>{
-    const row=document.getElementById('row-'+rId);
+  RIDS.forEach(rid=>{
+    const row=document.getElementById('row-'+rid);
     if(!row)return;
-    const slots=row.querySelectorAll('.slot[id]');
+    const slots=row.querySelectorAll('.sl[id]');
     if(!slots.length)return;
     const allDone=Array.from(slots).every(sl=>s[sl.id]);
-    row.classList.toggle('row-done',allDone);
+    row.classList.toggle('done',allDone);
   });
   const pct=total>0?Math.round(done/total*100):0;
-  document.getElementById('progressFill').style.width=pct+'%';
-  document.getElementById('progressText').textContent='تقدمك: '+done+' / '+total+' جلسة ('+pct+'%)';
-  document.getElementById('statDays').textContent=done;
+  document.getElementById('pf').style.width=pct+'%';
+  document.getElementById('ptx').textContent='تقدمك: '+done+' / '+total+' جلسة ('+pct+'%)';
+  document.getElementById('sdone').textContent=done;
 }
 function resetAll(){
-  if(confirm('هل أنت متأكد من إعادة تعيين كل التقدم؟')){
-    localStorage.removeItem(STORAGE_KEY);applyState();
-  }
+  if(confirm('هل أنت متأكد من إعادة تعيين كل التقدم؟')){localStorage.removeItem(KEY);apply();}
 }
-applyState();
+apply();
 </script>
 </body>
 </html>
