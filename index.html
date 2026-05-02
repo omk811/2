@@ -658,23 +658,31 @@ tr.row-done .day-td,tr.row-done .date-td{background:#E8F8F0}
   <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
   <td style="font-size:9px;color:var(--fri-b)">جمعة مع مراجعة</td>
 </tr>
-<tr>
+<tr id="row-ex5">
   <td class="day-td">السبت</td><td class="date-td">٦/٦</td>
-  <td colspan="5" style="background:var(--light);text-align:center;font-size:10px;color:var(--muted);font-style:italic;padding:6px">
-    لا امتحان — إجازة نهاية الأسبوع | راحة واستعداد
-  </td>
-  <td></td>
+  <td><div class="slot school-slot"><span class="slot-title">لا امتحان اليوم</span></div></td>
+  <td><div class="slot" id="s-ex5-1" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-ex5-1','ex5')">
+    <span class="slot-title">الاجتماعيات</span>
+    <span class="slot-sub">تركيز كامل — مراجعة شاملة</span>
+  </div></td>
+  <td><div class="slot" id="s-ex5-2" style="background:var(--sci-l);border-color:var(--sci-m);color:var(--sci-b)" onclick="toggle('s-ex5-2','ex5')">
+    <span class="slot-title">العلوم</span>
+    <span class="slot-sub">تركيز كامل — مراجعة شاملة</span>
+  </div></td>
+  <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
+  <td class="exam-note"><span class="exam-badge">امتحان غداً</span><br>العلوم</td>
 </tr>
 <tr class="exam-day-row">
   <td class="day-td" style="color:var(--exam-b)">الأحد</td><td class="date-td">٧/٦</td>
   <td><span class="exam-label">امتحان العلوم<br>ساعة ونصف | ٨:٠٠–٩:٣٠</span></td>
   <td><div class="slot" id="s-ex4-1" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-ex4-1','ex4')">
     <span class="slot-title">الاجتماعيات</span>
-    <span class="slot-sub">مراجعة خفيفة — استعداد لامتحان غداً</span>
+    <span class="slot-sub">تركيز كامل — الاجتماعيات فقط</span>
   </div></td>
-  <td style="background:#EFF9F4;text-align:center;vertical-align:middle;font-size:10px;font-weight:700;color:#085041">
-    استرخاء تام<br>النوم ١٠:٠٠ م
-  </td>
+  <td><div class="slot" id="s-ex4-2" style="background:var(--soc-l);border-color:var(--soc-m);color:var(--soc-b)" onclick="toggle('s-ex4-2','ex4')">
+    <span class="slot-title">الاجتماعيات فقط</span>
+    <span class="slot-sub">تثبيت نهائي — خرائط وتواريخ ومفاهيم</span>
+  </div></td>
   <td class="sleep-td">النوم<br>١٠:٠٠ م</td>
   <td class="exam-note"><span class="exam-badge">امتحان غداً</span><br>الاجتماعيات</td>
 </tr>
@@ -737,7 +745,7 @@ function applyState(){
               'd7','d8','d9','d10','d11','f2','d12',
               'd13','d14','d15','d16','d17','f3','d18',
               'd19','d20','e1','ef1','e2','e3',
-              'ex0','ex1','ex2','ex3','ef2','ex4'];
+              'ex0','ex1','ex2','ex3','ef2','ex4','ex5',];
   rows.forEach(rId=>{
     const row=document.getElementById('row-'+rId);
     if(!row)return;
